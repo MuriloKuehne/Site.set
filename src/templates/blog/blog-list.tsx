@@ -1,27 +1,29 @@
-import { Search } from '@/components/search';
-import { Post } from 'contentlayer/generated';
-import { Inbox } from 'lucide-react';
-import { useRouter } from 'next/router';
-import { PostCard } from './components/post-card';
-import { PostGridCard } from './components/post-grid-card';
+"use client"
+import { Search } from "@/components/search"
+import { Post } from "contentlayer/generated"
+import { Inbox } from "lucide-react"
+import { useRouter } from "next/router"
+import { PostCard } from "./components/post-card"
+import { PostGridCard } from "./components/post-grid-card"
+import { useSearchParams } from "next/navigation"
 
 export type BlogListProps = {
-  posts: Post[];
-};
+  posts: Post[]
+}
 
 export function BlogList({ posts }: BlogListProps) {
-  const router = useRouter();
-  const query = router.query.q as string;
+  const searchParams = useSearchParams()
+  const query = searchParams?.get("q") ?? ""
   const pageTitle = query
     ? `Resultados de busca para "${query}"`
-    : 'Dicas e estratégias para impulsionar seu negócio';
+    : "Dicas e estratégias para impulsionar seu negócio"
 
   const postList = query
     ? posts.filter((post) =>
         post.title.toLocaleLowerCase()?.includes(query.toLocaleLowerCase())
       )
-    : posts;
-  const hasPosts = postList?.length > 0;
+    : posts
+  const hasPosts = postList?.length > 0
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full">
@@ -51,7 +53,7 @@ export function BlogList({ posts }: BlogListProps) {
               key={post._id}
               title={post.title}
               description={post.description}
-              date={new Date(post.date).toLocaleDateString('pt-BR')}
+              date={new Date(post.date).toLocaleDateString("pt-BR")}
               slug={post.slug}
               image={post.image}
               author={{
@@ -73,5 +75,5 @@ export function BlogList({ posts }: BlogListProps) {
         </div>
       )}
     </div>
-  );
+  )
 }
