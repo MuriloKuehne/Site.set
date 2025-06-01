@@ -2,7 +2,6 @@
 import { Search } from "@/components/search"
 import { Post } from "contentlayer/generated"
 import { Inbox } from "lucide-react"
-import { useRouter } from "next/router"
 import { PostCard } from "./components/post-card"
 import { PostGridCard } from "./components/post-grid-card"
 import { useSearchParams } from "next/navigation"
