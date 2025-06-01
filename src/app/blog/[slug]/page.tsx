@@ -1,7 +1,6 @@
 import NotFound from "@/app/not-found"
 import PostPage from "@/pages/blog-page/[slug]"
 import { allPosts } from "contentlayer/generated"
-import { title } from "process"
 
 type BlogPostPageProps = {
   params: Promise<{
