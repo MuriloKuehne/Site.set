@@ -19,7 +19,9 @@ export default function ErrorBoundary({ error, reset }: ErrorBoundaryProps) {
         <h2 className="text-heading-xl text-gray-100 font-sans mb-2">
           Algo deu errado!
         </h2>
-        <p>{error?.message || "Ocorreu um erro inesperado."}</p>
+        <p className="font-inter font-normal">
+          {error?.message || "Ocorreu um erro inesperado."}
+        </p>
         <Button variant={"primary"} onClick={reset} className="mt-4">
           Tentar novamente
         </Button>
