@@ -23,7 +23,7 @@ Acesse a versão online do site:
 | Desktop | Mobile |
 |--------|--------|
 | ![image](https://github.com/user-attachments/assets/11b2c014-1821-41d5-8ede-40bfe1789e51) | ![image](https://github.com/user-attachments/assets/56ab71aa-a27f-4d18-a1e1-c3729c6b0743)
-| ![image](https://github.com/user-attachments/assets/d43afea6-98af-4161-a77f-f9e2f7f5e155) | ![image](https://github.com/user-attachments/assets/fabbd6e5-6b9b-4305-bbdb-b08cf8e5e430)
+| ![image](https://github.com/user-attachments/assets/24a3080d-c100-4f76-8cc9-1b1e693aa9ae) | ![image](https://github.com/user-attachments/assets/fabbd6e5-6b9b-4305-bbdb-b08cf8e5e430)
 | ![image](https://github.com/user-attachments/assets/9f8d85a1-aa8f-41e3-abe3-6726a9c05db6) | ![image](https://github.com/user-attachments/assets/a546b200-ffdd-401f-91c9-21d759a5c6fb)
 
 
